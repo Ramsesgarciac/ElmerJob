@@ -37,7 +37,7 @@ export default async function PokemonPage({ params } : { params: { pokemonName: 
                     const statValue = statObject.base_stat;
 
                     return (
-                        <div className="flex items-stretch" style={{width: "500px"}} key={statName}>
+                        <div className="flex items-stretch" style={{width: "300px"}} key={statName}>
                             <h3 className="p-3 w-2/4">{statName}: {statValue}</h3>
                             <Progress className="w-2/4 m-auto" value={statValue} />
                         </div>
